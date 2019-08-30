@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contate-nos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/formcontato.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="nav-menu">
+            <h1 id="logo"><a href="./index.html">PHEvents</a></h1>
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./events.html">Eventos</a></li>
+                <li><a href="./contat.html">Contate-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Header -->
+    <div id="divMsg"><p id="msgValForm"></p></div>
+    <!-- Section Main -->
+    <section class="main">
+        <form action="" method="get" id="form">
+            <!-- Dados pessoais -->
+            <fieldset id="dados">
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <input type="text" id="name" class="name" placeholder="Primeiro Nome" required>
+                    <input type="text" id="lastName" class="lastName" placeholder="Sobrenome" required><br>
+                    <input type="number" name="age" id="age" placeholder="Idade" min="18" required><br>
+                    <input type="text" id="email" class="email" placeholder="Email" required>
+                    <input type="text" name="numCell" id="numCell" placeholder="Nº Celular" required><br>
+                    <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
+                    <input type="text" name="rg" id="rg" placeholder="RG" required>
+                </div>
+            </fieldset>
+            <!-- Sexo -->
+            <fieldset id="sexo">
+                <legend>Sexo</legend>
+                <div>
+                    <!-- Masculino -->
+                    <input type="radio" name="radSex" id="masc" checked>
+                    <label for="masc">Masculino</label><br>
+                    <!-- Feminino -->
+                    <input type="radio" name="radSex" id="femi">
+                    <label for="femi">Feminino</label>
+                </div>   
+            </fieldset>
+            <!-- TextArea para texto -->
+            <fieldset id="textArea">
+                <legend>Texto</legend>
+                <textarea name="text" id="text" cols="40" rows="10" placeholder="Digite Aqui.."></textarea>
+            </fieldset>
+            <input type="submit" value="Enviar" id="btn">
+        </form>
+    </section>
+    <!-- End Section -->
+    <!-- Footer -->
+    <footer>
+        <ul class="map-menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./events.html">Eventos</a></li>
+            <li><a href="./contat.html">Contate-nos</a></li>    
+        </ul>
+        <ul>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Facebook</a></li>
+        </ul>
+        <div>
+            <p>Photografy Events. &copy; Copyright</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Scripts JS -->
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/contat/caracters.js"></script>
+    <script src="./javascript/contat/validacoes.js"></script>
+    <script src="./javascript/contat/script.js"></script>
+</body>
+</html>
