@@ -3,3 +3,88 @@ body {
     padding: 0;
     font-family: sans-serif;
 }
+
+/* Header */
+
+#nav-menu {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    margin-left: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    transition: 0.4s ease;
+}
+#logo a:hover {
+    color: rgb(58, 211, 58);
+    text-shadow: 1px 1px 7px white;
+}
+
+.menu {
+    width: 400px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 20px;
+    transition: 0.4s ease;
+}
+
+.menu a:hover {
+    text-shadow: 1px 1px 7px white;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+.map-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.map-menu ul {
+    list-style: none;
+}
+.map-menu li {
+    margin: 20px 0px;
+}
+.map a{
+    text-decoration: none;
+    color: white;
+}
+.social a{
+    color: white;
+    font-size: 15pt;
+    transition: 0.4s ease;
+}
+.social a:hover {
+    text-shadow: 1px 1px 7px white;
+}
+.copyright {
+    text-align: center;
+}
+
+
