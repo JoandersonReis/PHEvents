@@ -88,3 +88,43 @@ footer {
 }
 
 
+/* Button Menu */
+.btn-menu {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 15pt;
+    display: none;
+}
+
+
+/* Responsive Menu*/
+@media(max-width: 700px) {
+    .menu {
+        position: absolute;
+        top: 65px;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        transition: 0.3s ease;
+    }
+    .menu li a {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .btn-menu {
+        display: block;
+        margin-right: 30px;
+    }
+    .hidden {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+}
+
+
